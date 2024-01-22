@@ -1,0 +1,11 @@
+<h1>Job Listings</h1>
+
+<% @jobs.each do |job| %>
+  <div class="job-listing">
+    <%= link_to job_path(job) do %>
+      <h2><%= job.title %></h2>
+    <% end %>
+    <p><%= job.description %></p>
+    <p><strong>Location:</strong> <%= job.location %></p>
+  </div>
+<% end %>

@@ -1,0 +1,6 @@
+<h3><%= link_to "Home page", root_path, class: "apply-button" %></h3>
+<h3><%= link_to "Go to OpenAI", @job.url, class: "apply-button", target: "_blank", rel: "noopener", 'aria-label' => "Apply for #{@job.title}" %></h3>
+<h1><%= @job.title %></h1>
+<p><strong>Location:</strong> <%= @job.location %></p>
+<%= raw @job.about_team %>
+<%= raw @job.about_role %>
